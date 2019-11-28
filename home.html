@@ -1,0 +1,304 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="style.css">
+            
+        
+            <link rel="stylesheet" href="style.css">
+        <style>
+
+            body{
+                background-color: #e5e5e5;
+                margin:0;
+            }
+            .content{
+                margin-left: 18%;
+                background-color: #e5e5e5;
+                display: flex;
+                justify-content: flex-start;
+                margin-top:5%;
+            }
+            .movie_titles{    
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: flex-start; 
+            }
+
+            .poster_container{
+                margin: 0 2% 1% 0; 
+                font-size: 0.7em;
+                text-align: center;
+            }
+
+            .navigation{
+                display: flex;                
+                justify-content: space-between;
+            }
+            .lang_items{
+                padding-top:15%;
+            }
+            .lang_items a{
+                display: flex;
+                color: white;
+                justify-content: center;       
+                padding: 12px;
+                text-align: center;                
+                text-decoration: none;
+            }
+            .lang_items a:hover {
+                background-color: #5f5553;
+            }
+            .lang_menu{
+                margin-top:2.8%;
+                position: fixed;
+                padding: 0;
+                float: left;
+                width: 12%;
+                background-color: #1f2539;
+                height: 100%
+            }
+    
+            
+        </style>
+    </head>
+    <body>
+        <div class="navigation">           
+            <ul class="nav_menu">
+                <li class="nav_items"><a href="login.html">Sign in</a></li>
+                <li class="nav_items"><a href="contact_us.html">Contact Us</a></li>
+                <li class="nav_items"><a href="about_us.html">About Us</a></li>
+                <li class="nav_items"><a href="offers.html">Offers</a></li>
+                <li class="nav_items"><a href="home.html">Home</a></li>
+            </ul>
+            <img class="logo" width="12%" src ="images/myyy.jpeg">
+            
+        </div>
+        <ul class="lang_menu">
+                <li class="lang_items" onclick="document.getElementById('all').style.display='block'"><a href="">All Languages</a></li>
+                <li class="lang_items" id="hindi" onclick="hindi()"><a href="">Hindi</a></li>
+                <li class="lang_items" id="english" onclick="english()"><a href="">English</a></li>
+                <li class="lang_items" id="kannada" onclick="document.getElementById('kannada').style.display='block'"><a href="">Kannada</a></li>
+                <li class="lang_items" id="malayalam" onclick="malayalam()"><a href="">Malayalam</a></li>
+                <li class="lang_items" id="tamil" onclick="tamil()"><a href="">Tamil</a></li>
+                <li class="lang_items" id="telugu" onclick="telugu()"><a href="">Telugu</a></li>
+            </ul>
+        <div id='all' class="content" >
+            <div class="movie_titles">
+                    <div class="poster_container kannada" >
+                        <a href="kgf_seats.php"><img class="poster" src="images/kgf.jpg"></a>
+                        <h2>K.G.F(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/pailwan.jpg">
+                        <h2>Pailwan(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/99.jpg">
+                        <h2>99(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/kirik party.jpg">
+                        <h2>Kirik Party(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/bharaate.jpg">
+                        <h2>Bharaate(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/yajamana.jpg">
+                        <h2>Yajamana(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/kurukshetra.jpg">
+                        <h2>Kurukshetra(Kannada) </h2>
+                    </div>
+                    <div class="poster_container kannada">
+                        <img class="poster" src="images/kavaludaari.jpg">
+                        <h2>Kavaludaari(Kannada) </h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <a href="kaithi_seats.php"><img class="poster" src="images/kaathi.jpg"></a>
+                        <h2>Kaithi(Tamil)</h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <a href="bigil_seats.php"><img class="poster" src="images/bigil.jpg"></a>
+                        <h2>Bigil(Tamil)</h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <a href="asuran_seats.php"><img class="poster" src="images/asuran.jpg"></a>
+                        <h2>Asuran(Tamil)</h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <img class="poster" src="images/kathi.jpg">
+                        <h2>Kathi(Tamil)</h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <img class="poster" src="images/jilla.jpg">
+                        <h2>Jilla(Tamil)</h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <img class="poster" src="images/comali.jpg">
+                        <h2>Comali(Tamil)</h2>
+                    </div>   
+                    <div class="poster_container tamil">
+                        <img class="poster" src="images/kabali.jpg">
+                        <h2>Kabali(Tamil)</h2>
+                    </div>
+                    <div class="poster_container tamil">
+                        <img class="poster" src="images/petta.jpg">
+                        <h2>Petta(Tamil)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <a href="unda_seats.php"><img class="poster" src="images/unda.jpg"></a>
+                        <h2>Unda(Malayalam)</h2>
+                    </div>
+                    
+                    <div class="poster_container">
+                        <img class="poster" src="images/nayak.jpg">
+                        <h2>Nayak(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/war.jpg">
+                        <h2>War(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/sultan.jpg">
+                        <h2>Sultan(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/padmaavat.jpg">
+                        <h2>Padmaavat(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/paa.jpg">
+                        <h2>Paa(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/dangal.jpg">
+                        <h2>Dangal(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/3id.jpg">
+                        <h2>3 Idiots(Hindi)</h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/taare.jpg">
+                        <h2>Taare Zameen Par(Hindi) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/nota.jpg">
+                        <h2>Nota(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/syeraa.jpg">
+                        <h2>Syeraa(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/nk.jpg">
+                        <h2>Ninnu Kori(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/maharshi.jpg">
+                        <h2>Maharshi(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/saaho.jpg">
+                        <h2>Saaho(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/jersey.jpg">
+                        <h2>Jersey(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/evaru.jpg">
+                        <h2>Evaru(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/majili.jpg">
+                        <h2>Majili(Telugu) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/endgame.jpg">
+                        <h2>Avengers End Game(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/joker.jpg">
+                        <h2>Joker(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/fvf.jpg">
+                        <h2>Ford V Ferrari(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/21.jpg">
+                        <h2>21 Bridges(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/titanic.jpg">
+                        <h2>Titanic(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/prestige.jpg">
+                        <h2>The Prestige(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/mib.jpg">
+                        <h2>MIB(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/thor.jpg">
+                        <h2>Thor(English) </h2>
+                    </div>
+                    <div class="poster_container">
+                        <img class="poster" src="images/doc.jpg">
+                        <h2>Doctor Strange(English) </h2>
+                    </div>                               
+
+            </div>   
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // Get current page URL
+                var url = window.location.href;
+
+                // remove # from URL
+                url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+
+                // remove parameters from URL
+                url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+
+                // select file name
+                url = url.substr(url.lastIndexOf("/") + 1);
+
+                // If file name not avilable
+                if(url == ''){
+                url = 'home.html';
+                }
+
+                // Loop all menu items
+                $('.nav_menu li').each(function(){
+
+                // select href
+                var href = $(this).find('a').attr('href');
+
+                // Check filename
+                if(url == href){
+
+                // Add active class
+                $(this).addClass('active');
+                }
+                });
+                });
+            </script>
+            <script type=text/javascript>
+                var modal = document.getElementById('all');
+
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+    </body>
+    
+</html>

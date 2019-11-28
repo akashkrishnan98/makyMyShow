@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .content{
+            
+            padding: 20px;
+            color: #656565;
+            width:79%;
+            margin:auto;
+        }
+        .movie_content{
+            margin-top: 8%;
+        }
+        
+        .cinema{
+            width: 33.33%;
+            float: left;
+            color: #656565;
+            padding: 20px 10px 0;
+            margin-left: 10%;
+        }
+        .adv{
+            width: 33.33%;
+            float: right;
+            padding: 20px 10px 0;
+            color: #656565;
+            margin-right: 5%;
+        }
+        .fcontent{
+            color: #656565;
+            text-align: center;
+            padding-top: 5%;
+            width: 80%;
+            margin: auto;
+            clear: both;
+            
+        }        
+        body{
+            background-color: #e5e5e5;
+            margin:0;
+        }
+
+        .navigation{
+            display: flex;
+            
+            justify-content: space-between;
+        }
+        
+
+</style>
+<title>About Us</title>
+</head>
+<body>
+        
+        
+        <div class="navigation">
+           
+                <ul class="nav_menu">
+                        
+                        <li class="nav_items"><a href="login.html">Sign in</a></li>
+                        <li class="nav_items"><a href="contact_us.html">Contact Us</a></li>
+                        <li class="nav_items"><a href="about_us.html">About Us</a></li>
+                        <li class="nav_items"><a href="offers.html">Offers</a></li>
+                        <li class="nav_items"><a href="home.html">Home</a></li>
+                </ul>
+                <img class="logo" width="12%" src ="images/myyy.jpeg">
+        </div>
+<div class="movie_content">
+    <div class="content">
+        <h1 align="center">Book a Movie Experience With makeMyshow!</h1>
+        <p1>Life has never been so convenient for a movie buff in Bengaluru! Remember the time when you had to stand in a long queue outside the theatre to book movie tickets? That time is gone now! With the emergence of makeMyshow, India's online ticketing portal, booking movie tickets has become a cake walk. Now enjoy movies playing near you with just a click! makeMyshow is Movies on the go – Jahan Mood Kiya Wahan Book Kiya! Just open the page, choose your movie, theatre, and book tickets online, right away! So simple. Isn't it! We give you some more amazingly cool reasons why you should book your movie tickets here like our Offers!</p1><br>
+    </div>
+    <div class="cinema">
+        <h2>Bollywood, Hollywood or Regional cinema</h2>
+        <p2>Whatever be your choice in movies, makeMyshow is the Go-to destination! With the list of all the upcoming movies Bengaluru in any language - Hindi, English, Tamil, Telugu, Kannada, Malayalam , we keep Bengaluru informed about the movie world! We give you the list of movies too, so that you can plan your movie outing accordingly!</p2><br>
+    </div>
+    <div class="adv">
+        <h2>Partners</h2>
+        <p2><ul style="list-style-type:square;">
+                <li>pVr.</li>
+                <li>IMAX. </li>
+                <li>INOX. </li>
+                <li>SPI Cinemas.</li>
+              </ul></p2>
+    </div>
+    <div class="fcontent">
+        <p1>
+                makeMyshow is the quickest and the most convenient way to book movie tickets online. What more? With our great discount offers on movie tickets, you can also save on every booking. Catch movies on the go with makeMyshow!
+        </p1>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // Get current page URL
+                var url = window.location.href;
+
+                // remove # from URL
+                url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+
+                // remove parameters from URL
+                url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+
+                // select file name
+                url = url.substr(url.lastIndexOf("/") + 1);
+
+                // If file name not avilable
+                if(url == ''){
+                url = 'home.html';
+                }
+
+                // Loop all menu items
+                $('.nav_menu li').each(function(){
+
+                // select href
+                var href = $(this).find('a').attr('href');
+
+                // Check filename
+                if(url == href){
+
+                // Add active class
+                $(this).addClass('active');
+                }
+                });
+                });
+            </script>
+</body>
+</html>
